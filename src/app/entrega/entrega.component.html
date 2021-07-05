@@ -1,0 +1,154 @@
+<form [formGroup]="formulario" class="container-fluid h-100 mt-5">
+  <div class="row text-center">
+    <h1>Faça seu cadastro e comece fazer suas entregas!</h1>
+  </div>
+  <div class="formulario container-fluid mt-5">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="bg-dark" style="border-radius: 20px;">
+        <div class="row mt-3 mb-3 ms-3">
+        <h2>Dados Pessoais</h2>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="nome" placeholder="Nome">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="sobrenome" placeholder="Sobrenome">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="senha" placeholder="Senha">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="confirmaSenha"
+              placeholder="Confirmar Senha">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="celular" placeholder="Celular">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="rg" placeholder="RG">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="cpf" placeholder="CPF">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="cnpj" placeholder="CNPJ">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="cidadeAtuacao"
+              placeholder="Cidade de Atuacao">
+          </div>
+        </div>
+        <div class="row mt-3 mb-3 ms-3">
+          <h2>Dados Bancários</h2>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="banco" placeholder="Banco">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="tipoConta" placeholder="Tipo de Conta">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="agencia" placeholder="Agencia">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="conta" placeholder="Conta">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="nomeConta" placeholder="Nome">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="cpfConta" placeholder="CPF">
+          </div>
+        </div>
+        <div class="row mt-3 ms-3 mb-3">
+          <h2>Dados do Veículo</h2>
+          </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="tipoVeiculo" placeholder="Tipo de Veiculo">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="corVeiculo" placeholder="Cor do Veiculo">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="placaVeiculo"
+              placeholder="Placa do Veiculo">
+          </div>
+        </div>
+
+        <div class="row mt-2 ms-3">
+          <div class="col-11" id="input_container">
+            <input type="file" id="habilitacao" style="display: none;" formControlName="fotoHabilitacao">
+            <img id="input_img" src="../../assets/source-24px.svg">
+            <label class="form-control" style="background-color: #323233; color: #FFF;" for="habilitacao">Foto da sua habilitação</label>
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11" id="input_container">
+            <input type="file" id="fotoDocVeiculo" style="display: none;" formControlName="fotoDocVeiculo">
+            <img id="input_img" src="../../assets/source-24px.svg">
+            <label class="form-control" style="background-color: #323233; color: #FFF;" for="fotoDocVeiculo">Foto dos documentos do veiculo</label>
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11" id="input_container">
+            <input type="file" id="fotoCnh" style="display: none;" formControlName="fotoCnh">
+            <img id="input_img" src="../../assets/source-24px.svg">
+            <label class="form-control" style="background-color: #323233; color: #FFF;" for="fotoCnh">Sua foto com a CNH</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-check col-11 mb-1 mt-5" style=" display: flex; justify-content: center;">
+            <input class="checado form-check-input" type="checkbox" formControlName="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              <p>Li e aceito os <a href="#">termos do contrato</a></p>
+            </label>
+          </div>
+        </div>
+
+        <div class="row col-11" style="display: flex; justify-content: center;">
+          <label class="btn btn-outline-success" (click)="submit()" style="color: #09090A; border: none;">Enviar</label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</form>

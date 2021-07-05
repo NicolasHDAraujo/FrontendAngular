@@ -1,0 +1,111 @@
+<form [formGroup]="formulario" class="container-fluid h-100 mt-5">
+  <div class="row text-center">
+    <h1>Faça seu cadastro e comece fazer suas entregas!</h1>
+  </div>
+  <div class="formulario container-fluid mt-5">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="bg-dark" style="border-radius: 20px;">
+        <div class="row mt-3 mb-3 ms-3">
+          <h2>Dados Pessoais</h2>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="nome" placeholder="Nome">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="sobrenome" placeholder="Sobrenome">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="cpf" placeholder="CPF">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="rg" placeholder="RG">
+          </div>
+        </div>
+        <div class="row mt-3 mb-3 ms-3">
+          <h2>Dados Estabelecimento</h2>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="cnpj" placeholder="CNPJ">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="nomeResponsavel" placeholder="Nome do responsável">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="estado" placeholder="Estado">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="cidade" placeholder="Cidade">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="emailEstabelecimento" placeholder="Email">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="telefone" placeholder="Telefone">
+          </div>
+        </div>
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <input type="text" class="form-control" formControlName="ramoAtuacao" placeholder="Ramo de atuação">
+          </div>
+        </div>
+
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <select class="form-select"  aria-label="possuiMotoboy">
+              <option value="" disabled selected>Tem motoboy próprio?</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mt-2 ms-3">
+          <div class="col-11">
+            <select class="form-select" aria-label="atuaComDelivery">
+              <option value="" disabled selected>Atua com outro delivery?</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-check col-11 mb-1 mt-5" style=" display: flex; justify-content: center;">
+            <input class="checado form-check-input" type="checkbox" formControlName="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              <p>Li e aceito os <a href="#">termos do contrato</a></p>
+            </label>
+          </div>
+        </div>
+
+        <div class="row col-11" style="display: flex; justify-content: center;">
+          <label class="btn btn-outline-success" (click)="submit()" style="color: #09090A; border: none;">Enviar</label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</form>

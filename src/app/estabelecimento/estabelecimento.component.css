@@ -1,0 +1,53 @@
+input, .form-select {
+  background-color: #323233;
+  color: #FFF;
+}
+
+::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+input:focus{
+  background-color: #323233;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #FFFF;
+}
+
+h2, a{
+  color: #EBD700;
+}
+
+.checado{
+  background-color: #FFF;
+}
+
+.checado:checked {
+  background-color: #323233;
+  border: none;
+}
+
+.btn{
+  height: 30px;
+  text-align: center;
+  width: 250px;
+  margin-bottom: 100px;
+  background-color: #EBD700;
+  border-radius: 20px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='25' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+}

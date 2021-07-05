@@ -1,0 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.imagemFundo{
+  padding: 30px;
+  background-image: url('../../assets/Footer.png');
+}

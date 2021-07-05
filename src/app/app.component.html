@@ -1,0 +1,16 @@
+<app-header></app-header>
+<app-banner [caminho]="caminho"></app-banner>
+<div class="container" style="overflow: hidden; max-width: fit-content !important;">
+  <div class="row">
+    <div class="col-1">
+      <img class="d-block " width="600" height="1050" style="margin-left: -520px;" src="../assets/Squaresv2_1.png">
+      <img class="d-block" width="600" height="800" style="margin-left: -450px;" src="../assets/Squaresv2_2.png">
+    </div>
+    <div class="col-10"><router-outlet></router-outlet></div>
+    <div class="col-1">
+      <img class="d-block" width="600" height="1140" style="margin-left: -5px;" src="../assets/Squaresv2_1.png">
+      <img class="d-block" width="600" height="800" style="margin-left: 65px;" src="../assets/Squaresv2_2.png">
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

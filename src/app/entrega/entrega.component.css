@@ -1,0 +1,65 @@
+input {
+  background-color: #323233;
+  color: #FFF;
+}
+
+::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+input:focus{
+  background-color: #323233;
+  color: #FFF;
+}
+
+input [type="file"]{
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-left: 20px;
+  color: #FFFF;
+}
+
+h2, a{
+  color: #EBD700;
+}
+
+.checado{
+  background-color: #FFF;
+}
+
+.checado:checked {
+  background-color: #323233;
+  border: none;
+}
+
+.btn{
+  height: 30px;
+  text-align: center;
+  width: 250px;
+  margin-bottom: 100px;
+  background-color: #EBD700;
+  border-radius: 20px;
+}
+
+#input_container {
+  position:relative;
+}
+#input_img {
+  position:absolute;
+  bottom:6px;
+  right: 15px;
+  width:24px;
+  height:24px;
+}
+
+@media(max-width: 600px){
+  #input_img{
+    display: none;
+  }
+}

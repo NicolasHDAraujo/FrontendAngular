@@ -1,0 +1,24 @@
+.card{
+  display: block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border-radius: 20px;
+}
+
+.card p, h5 {
+  color: #D4D4D4;
+  font-size: large;
+}
+
+.card img{
+  height: 150px;
+}
+
+@media(max-width: 560px){
+  .card{
+    width: 100% !important;
+  }
+
+}
